@@ -1,0 +1,4 @@
+#!/bin/bash
+FUNCTION_NAME=$(basename -- "${BASH_SOURCE[0]}")
+. "$(cd $(dirname -- "${BASH_SOURCE[0]}"); pwd)/$FUNCTION_NAME.sh"
+$FUNCTION_NAME
